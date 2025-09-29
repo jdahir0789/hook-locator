@@ -11,100 +11,95 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Find, search, and debug WordPress hooks instantly. A powerful developer tool to analyze actions, filters, and custom hooks in plugins and themes.
+Professional WordPress hook analysis tool for developers. Search and analyze hook usage in plugins and themes with detailed code context.
 
 == Description ==
 
-Search and debug WordPress hooks with ease. Analyze actions & filters in plugins and themes using a fast, secure developer tool.
-
-### Why Use Hook Locator?
-
-* **Find WordPress hooks instantly** – Search any hook name (`init`, `wp_head`, `save_post`, or custom hooks)
-* **Analyze plugins and themes** – Organized dropdowns for scanning specific directories
-* **Debug faster** – View exact file paths, line numbers, and code context with highlighting
-* **Optimize performance** – Detect unnecessary or conflicting hooks
-* **Improve code quality** – Ensure proper usage of actions and filters
-* **Developer-friendly UI** – Modern, professional, and follows WordPress admin design standards
+**Hook Locator** is the ultimate WordPress development tool for analyzing hook usage across your plugins and themes. Built for developers, it provides a professional admin interface to search, analyze, and understand WordPress hook implementations.
 
 ### Key Features
 
-* **Advanced Hook Search** – Quickly find hooks in plugins, themes, or the entire site  
-* **Detailed Code Analysis** – Highlighted code snippets with surrounding context  
-* **Multiple Hook Types** – Detects `add_action`, `add_filter`, `do_action`, `apply_filters`, and more  
-* **Secure & Reliable** – Nonce verification, sanitization, and admin-only access  
-* **Performance Optimized** – Smart scanning with limits to prevent timeouts  
-* **Export & Copy Tools** – Copy code snippets or export results for documentation  
-* **Accessibility Ready** – Works with keyboard navigation and screen readers  
-* **Translation Ready** – Full internationalization support
+* **Advanced Hook Search** - Find any WordPress hook across all plugins and themes
+* **Organized Directory Selection** - Separate dropdowns for plugins and themes with clean organization  
+* **Detailed Code Analysis** - View exact file locations with highlighted code context
+* **Multiple Hook Types** - Supports add_action, add_filter, do_action, apply_filters, and more
+* **Professional Interface** - Clean, modern admin UI following WordPress design standards
+* **Performance Optimized** - Efficient scanning with built-in safeguards and limits
+* **Security First** - Proper nonce verification, sanitization, and capability checks
+* **Developer Tools** - Click-to-copy code snippets, keyboard shortcuts, and export features
 
 ### Perfect For
 
-* **Plugin Developers** – Debug hook conflicts and ensure compatibility  
-* **Theme Developers** – Analyze theme customization and hook usage  
-* **Auditors & Security Reviewers** – Check for unsafe or inefficient hook usage  
-* **WordPress Learners** – Understand how hooks work in real-world code  
-* **Site Maintainers** – Troubleshoot issues and optimize performance  
+* **Plugin Developers** - Debug hook conflicts and understand plugin interactions
+* **Theme Developers** - Analyze theme hook implementations and customizations  
+* **Code Auditors** - Review hook usage patterns and security implementations
+* **WordPress Learners** - Understand how WordPress hooks work in real code
+* **Site Maintainers** - Debug issues and optimize hook performance
 
 ### How It Works
 
-1. Go to **Tools > Hook Locator** in your WordPress admin  
-2. Enter a hook name (e.g. `init`, `wp_head`, `save_post`)  
-3. Select a directory (all plugins, a specific plugin, or a theme)  
-4. Click **Search Hooks**  
-5. View results with file paths, line numbers, and hook types  
-6. Click any result for detailed highlighted code context  
+1. **Search Interface** - Enter any hook name and select search location
+2. **Instant Results** - View all matching files with line numbers and hook types
+3. **Code Context** - Click any result to see highlighted code with surrounding lines
+4. **Analysis Tools** - Get insights about hook types, usage patterns, and best practices
 
----
+### WordPress Standards Compliant
 
-### Debug WordPress Hooks with Ease
-
-Finding hooks in large WordPress sites can be overwhelming. Hook Locator gives developers a **fast, reliable, and professional way** to understand and debug how actions and filters are used—making development, optimization, and troubleshooting much easier.
-
----
+* **PHPCS/WPCS Compatible** - Follows all WordPress coding standards
+* **Secure Implementation** - Proper sanitization, nonces, and capability checks
+* **Performance Optimized** - Efficient file scanning with resource limits
+* **Accessibility Ready** - Keyboard navigation and screen reader compatible
+* **Translation Ready** - Full internationalization support
 
 == Installation ==
 
 ### Automatic Installation
-1. In WordPress admin, go to **Plugins > Add New**  
-2. Search for **Hook Locator**  
+1. Go to **Plugins > Add New** in your WordPress admin
+2. Search for "Hook Locator"
 3. Click **Install Now** and then **Activate**
 
 ### Manual Installation
-1. Download the plugin ZIP file  
-2. Go to **Plugins > Add New > Upload Plugin**  
-3. Upload the ZIP and click **Install Now**  
-4. Activate the plugin  
+1. Download the plugin ZIP file
+2. Go to **Plugins > Add New > Upload Plugin**
+3. Choose the ZIP file and click **Install Now**
+4. Activate the plugin
 
 ### Getting Started
-1. Go to **Tools > Hook Locator**  
-2. Enter a hook name to search  
-3. Select plugins, themes, or all directories  
-4. Review results with file paths and code context  
-
----
+1. Navigate to **Tools > Hook Locator** in your WordPress admin
+2. Enter a hook name (e.g., "init", "wp_head", "save_post")
+3. Select search location (All, specific plugin, or theme)
+4. Click **Search Hooks** to see results
+5. Click **View Details** on any result for code analysis
 
 == Frequently Asked Questions ==
 
-= How do I find all hooks in a WordPress plugin? =
-Simply choose the plugin from the dropdown, leave the search input blank, and Hook Locator will scan and list all actions and filters inside that plugin.
+= Does this affect my site performance? =
 
-= Can I use Hook Locator to debug custom hooks? =
-Yes. It works with both core WordPress hooks and custom hooks defined by plugins, themes, or your own code.
+No! Hook Locator only runs in the WordPress admin when you actively search. There's no frontend code or background processing that affects your site's performance.
 
-= Does Hook Locator slow down my site? =
-No. The plugin only runs in the admin panel when you perform a search. It does not load on the frontend and does not affect site performance.
+= What file types does it search? =
 
-= What is the difference between Hook Locator and runtime hook loggers? =
-Hook Locator performs **static code analysis**. It scans the source code to detect all hook references, even those that might not run during a specific request. This makes it more complete and reliable compared to runtime loggers.
+Hook Locator searches only PHP files (.php) since WordPress hooks are PHP-based. It automatically skips other file types for optimal performance.
 
-= Can it help me fix plugin conflicts? =
-Yes. By showing you where hooks are added or triggered, Hook Locator helps identify conflicts between plugins or themes so you can resolve issues faster.
+= Can I search for custom hooks? =
 
-= Does Hook Locator work with WordPress multisite? =
-Yes. It works on multisite installations. Each site can independently use Hook Locator to analyze its plugins and themes.
+Absolutely! Hook Locator finds any hook name you specify, including custom hooks created by plugins, themes, or your own code.
 
-= Is Hook Locator safe to use on production sites? =
-Absolutely. It only **reads** files; it never modifies code. All operations are restricted to administrators.
+= Is it safe to use on production sites? =
+
+Yes, Hook Locator is completely safe for production use. It only reads files and never modifies any code. All operations are restricted to users with administrator privileges.
+
+= Does it work with multisite? =
+
+Yes, Hook Locator works perfectly with WordPress multisite installations. Each site can use it independently to analyze their specific plugins and themes.
+
+= Can I export the search results? =
+
+Currently, you can copy individual code snippets to your clipboard. Future versions may include CSV/JSON export functionality based on user feedback.
+
+= What's the difference from other hook plugins? =
+
+Hook Locator focuses on static code analysis rather than runtime hook capture. This makes it more accurate, secure, and performant while providing deeper code insights.
 
 ---
 
