@@ -30,7 +30,7 @@ Clone into your WordPress plugins directory:
 
 ```bash
 cd wp-content/plugins
-git clone https://github.com/<your-username>/hook-locator.git hook-locator
+git clone https://github.com/jdahir0789/hook-locator.git hook-locator
 ```
 
 Or install manually:
@@ -91,7 +91,7 @@ Distributed under the [GPL v2 or later](https://www.gnu.org/licenses/gpl-2.0.htm
 ## 🔗 Links
 
 - [WordPress Plugin Directory](https://wordpress.org/plugins/hook-locator/)  
-- [Report Issues](https://github.com/<your-username>/hook-locator/issues)  
+- [Report Issues](https://github.com/jdahir0789/hook-locator/issues)  
 
 ---
 
