@@ -7,7 +7,7 @@
 **Hook Locator** is a professional **WordPress developer tool** that helps you **search, debug, and analyze WordPress hooks** across plugins and themes.  
 With an intuitive UI, it highlights hook usage (`add_action`, `add_filter`, `do_action`, etc.) with file paths, line numbers, and code context.  
 
-📦 **Plugin URL:** [`plugins/hook-locator`](plugins/hook-locator)
+📦 **Plugin URL:** https://wordpress.org/plugins/hook-locator/
 
 ---
 
